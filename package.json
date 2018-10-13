@@ -1,0 +1,49 @@
+{
+  "name": "@lindebros/awesome-api-client",
+  "version": "1.0.0",
+  "description": "An awesome client to use for communication with an API",
+  "main": "lib/ApiClient.js",
+  "scripts": {
+    "test": "jest",
+    "test-watch": "jest --watchAll",
+    "build": "npm run build:clean && babel --ignore **/*.spec.js src -d lib",
+    "build:clean": "rm -rf lib/"
+  },
+  "keywords": [
+    "ApiClient",
+    "API",
+    "communication"
+  ],
+  "author": "andylindebros@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
+    "querystring": "^0.2.0"
+  },
+  "devDependencies": {
+    "ajv": "^6.5.4",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2016": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "eslint": "^5.6.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "jest": "^23.6.0",
+    "prettier": "^1.14.3"
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  }
+}
