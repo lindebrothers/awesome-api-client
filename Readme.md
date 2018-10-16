@@ -37,7 +37,6 @@ Available methods:
 ApiClient.get(url, {
   headers: {object} custom headers,
   authToken: {string} token that will be set as a propertry of headers object (Authentication: bearer {token})
-
 })
 ```
 
@@ -74,7 +73,6 @@ ApiClient.patch({string} url, {object} body, {object} options = {
 ApiClient.delete(url, {
   headers: {object} custom headers,
   authToken: {string} token that will be set as a propertry of headers object (Authentication: bearer {token})
-
 })
 ```
 
@@ -86,14 +84,13 @@ Sends a file upload request.
 ApiClient.delete(url, file, {
   headers: {object} custom headers,
   authToken: {string} token that will be set as a propertry of headers object (Authentication: bearer {token})
-
 })
 ```
 
 #### CALL
 
 All methods above are shortcuts of the `call` function.
-If noone of the methods above suits your needs, you can used the `call` function to make a call to your API.
+If none of the methods above suits your needs, you can use the `call` function to make a request to your API.
 
 ```
 ApiClient.call({object} options = {
