@@ -9,6 +9,10 @@
     "build": "npm run build:clean && babel --ignore **/*.spec.js src -d lib",
     "build:clean": "rm -rf lib/"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lindebrothers/awesome-api-client"
+  },
   "keywords": [
     "ApiClient",
     "API",
@@ -16,6 +20,7 @@
   ],
   "author": "andylindebros@gmail.com",
   "license": "ISC",
+  "homepage": "https://github.com/lindebrothers/awesome-api-client",
   "dependencies": {
     "isomorphic-fetch": "^2.2.1",
     "querystring": "^0.2.0"
